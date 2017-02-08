@@ -1,0 +1,125 @@
+#imgIUT{
+  width : 300px;
+  height : 136px;
+  margin-left : auto;
+  margin-right : auto;
+  display : block;
+}
+
+html{
+  font-size: 62.5%;
+  color : white;
+}
+
+body{
+  background-image: url("http://applicook.fr/iut/images/bg.jpg");
+  background-size : 100% 100%;
+}
+
+h1{
+  font-size: 2.5rem;
+}
+
+p{
+  font-size: 1.6rem;
+  text-align : justify;
+}
+
+#imgCalais{
+  width : 500px;
+  height : auto;
+}
+
+table, th, td{
+  border : solid 1px black;
+  border-collapse :collapse;
+  padding : 5px;
+  text-align : center;
+}
+
+table{
+  margin : 20px 0px;
+}
+
+th{
+  background-color : lightgrey;
+}
+
+@media (max-width : 480px){
+
+  body{
+    background-image: url("http://applicook.fr/iut/images/bg.jpg");
+    background-size : cover;
+    background-attachment: fixed;
+  }
+
+  #imgCalais{
+    width : 100%;
+    height : auto;
+  }
+
+  h1{
+    font-size : 8vw;
+  }
+
+  table{
+    width : 95vw;
+  }
+
+  td, th{
+    border : none;
+    display : block;
+  }
+
+}
+
+@media (max-width : 767px){
+
+  body{
+    background-image: url("http://applicook.fr/iut/images/bg.jpg");
+    background-size : cover;
+    background-attachment: fixed;
+  }
+
+  #imgCalais{
+    width : 100%;
+    height : auto;
+  }
+
+  h1{
+    font-size : 8vw;
+  }
+
+  table{
+    width : 95vw;
+  }
+
+  td, th{
+    border : none;
+    display : block;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px){
+
+  body{
+    background-image: url("http://applicook.fr/iut/images/bg.jpg");
+    background-size : cover;
+    background-attachment: fixed;
+  }
+
+  #imgCalais{
+    width : 100%;
+    height : auto;
+  }
+
+  h1{
+    font-size : 8vw;
+  }
+
+
+
+}
+
+
