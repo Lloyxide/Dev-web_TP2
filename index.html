@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title> Woa </title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/favicon.jpg" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
   </head>
   <body>
 
     <div id="header">
-      <span id="iconMenu"> 	&#9776; </span>
+      <span id="iconMenu" onclick="menuMobile()"> 	&#9776; </span>
       <img src="images/undertale.jpg" width="366px" height="42px" alt="Undertale"/>
+      <a  href="tel:+900300400"><img id="phone" src="images/phone.png" alt="Contact"/></a>
       <ul id="top_right_menu">
         <li>Accueil</li>
-        <li>Dog</li>
+        <li onclick="dogDogDog()" id="doggy">Dog</li>
         <li>Contacts</li>
         <li><input type="text" id="search" placeholder="Rechercher..." /></li>
       </ul>
-      <img id="phone" src="images/phone.png" alt="Contact"/>
+
     </div>
 
     <div id="corps">
@@ -26,22 +29,22 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in risus ac mi venenatis congue. Mauris sed sem commodo, tempor neque sed, venenatis diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse eu neque id libero maximus aliquam et sed ligula. Donec vitae tempor mauris. Donec at odio erat. Etiam facilisis justo eu lacus viverra dictum. Pellentesque dolor justo, vulputate vitae mi non, aliquet vehicula tortor. Suspendisse sodales iaculis libero a sollicitudin. Pellentesque molestie ullamcorper euismod. Etiam venenatis mollis justo feugiat consectetur. </p>
       <div id="boxes">
         <div class="case">
-          <img src="images/character.png" alt=""/>
+          <img src="images/character.png" alt="" class="dogInc"/>
           <h2>Les personnages</h2>
           <span class="description">Tout les personnages principaux du jeu</span>
         </div>
         <div class="case">
-          <img src="images/monster.png" alt=""/>
+          <img src="images/monster.png" alt="" class="dogInc"/>
           <h2>Les monstres</h2>
           <span class="description">Une foule de monstres tous différents</span>
         </div>
         <div class="case">
-          <img src="images/history.png" alt=""/>
+          <img src="images/history.png" alt="" class="dogInc"/>
           <h2>L'histoire</h2>
           <span class="description">Une histoire magnifique pour un jeu hors du commun</span>
         </div>
         <div class="case">
-          <img src="images/mecanics.png" alt=""/>
+          <img src="images/mecanics.png" alt="" class="dogInc"/>
           <h2>Les mécaniques</h2>
           <span class="description">Des tas de mécaniques pour multiplier les expériences</span>
         </div>
@@ -58,7 +61,7 @@
           <input type="date" name="date_naissance" id="date_naissance" placeholder="Votre date de naissance" />
           <input type="email" name="mail" id="mail" placeholder="Votre e-mail " />
           <input type="text" name="plat_prefere" id="plat_prefere" placeholder="Votre plat préféré" />
-          <input type="text" name="monstre_prefere" id="monstre_prefere" placeholder="Votre monstre préféré" />
+          <input type="text" name="monstre_prefere" id="monstre_prefere" placeholder="Votre monstre préféré" /></br>
           <label for="photo">Photo : </label>
           <input type="file" name="photo" id="photo" accept="image/*" capture />
           <textarea name="motivation" id="motivation">Votre motivation pour rejoindre l'Underground</textarea>

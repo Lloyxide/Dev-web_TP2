@@ -116,6 +116,10 @@ body{
   width : 40%;
 }
 
+#corps #formulaire #photo{
+  width : auto;
+}
+
 #corps #formulaire #photo, #corps, #formulaire label{
   display : inline-block;
 }
@@ -148,6 +152,30 @@ body{
 
   #header #top_right_menu{
     display : none;
+    width : 100%;
+    margin-top : 15px;
+
+  }
+
+  #header #top_right_menu li{
+    display : block;
+    width : 100%;
+    height : auto;
+    margin : 0px;
+    padding : 5px 0px;
+    border-bottom : solid 1px white;
+    line-height : normal;
+    font-size : 6vw;
+
+  }
+
+  #header #top_right_menu #search{
+    display : none;
+  }
+
+  #header #top_right_menu li::before{
+    margin-right : 0px;
+    content: none;
   }
 
   #header img{
@@ -177,7 +205,7 @@ body{
     margin : 0px;
     padding : 0px;
     height : auto;
-    margin-bottom : 500px;
+    margin-bottom : 50px;
   }
 
   #corps #grandeImg{
@@ -340,6 +368,10 @@ body{
     font-size : 2vw;
   }
 
+  #corps #formulaire label{
+    padding-left : 1vw;
+  }
+
   #footer{
     text-align : center;
   }
@@ -347,4 +379,26 @@ body{
   #footer span{
     margin-right : 0px;
   }
+}
+
+.monster1{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.monster2{
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+
+.monster3{
+
 }
