@@ -7,7 +7,7 @@ function dogDogDog(){
 
   $('.dogInc').each(function (){
     $(this).prop("src","images/dog.gif");
-    $(this).css({"width": "auto", "position": "fixed"});
+    $(this).css({"width": "auto", "position": "fixed", "border-bottom" : "none"});
   });
 
   setInterval(function(){
