@@ -41,9 +41,11 @@ function menuMobile(){
 }
 
 window.ondevicemotion = function(event){
-  var aX = event.accelerationIncludingGravity.x;
-  var aY = event.accelerationIncludingGravity.y;
-  //console.log(aX + " " + aY);
+  var aX = event.rotationRate.x;
+  var aY = event.rotationRate.y;
+
+
+
   $("#acceX").html(aX);
   $("#acceY").html(aY);
   /*$('.dogInc').each(function (){
