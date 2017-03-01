@@ -41,12 +41,7 @@ function menuMobile(){
 }
 
 window.ondevicemotion = function(event){
-  var aX = event.rotationRate.x;
   var aY = event.rotationRate.y;
-
-
-
-  $("#acceX").html(aX);
   $("#acceY").html(aY);
   /*$('.dogInc').each(function (){
     $(this).css({"-webkit-transform": "rotate(45deg)", "-moz-transform": "rotate(45deg)", "-o-transform": "rotate(45deg)", "transform": "rotate(45deg)"});
