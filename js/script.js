@@ -49,7 +49,6 @@ window.ondevicemotion = function(event){
 }*/
 
 addEventListener("deviceorientation", function(e) {
-    $("#acceY").html(e.gamma);
     $('.dogInc').each(function (){
       $(this).css({"-webkit-transform": "rotate("+e.gamma+"deg)", "-moz-transform": "rotate("+e.gamma+"deg)", "-o-transform": "rotate("+e.gamma+"deg)", "transform": "rotate("+e.gamma+"deg)"});
     }
