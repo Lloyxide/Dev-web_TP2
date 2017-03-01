@@ -1,5 +1,6 @@
 function dogDogDog(){
 
+
   var audioDog = new Audio('audio/dog.mp3');
   audioDog.play();
 
@@ -37,4 +38,15 @@ function menuMobile(){
   document.getElementById("top_right_menu").style.display = "none";
   else
   document.getElementById("top_right_menu").style.display = "block";
+}
+
+window.ondevicemotion = function(event){
+  var aX = event.accelerationIncludingGravity.x;
+  var aY = event.accelerationIncludingGravity.y;
+  //console.log(aX + " " + aY);
+  $("#acceX").html(aX);
+  $("#acceY").html(aY);
+  /*$('.dogInc').each(function (){
+    $(this).css({"-webkit-transform": "rotate(45deg)", "-moz-transform": "rotate(45deg)", "-o-transform": "rotate(45deg)", "transform": "rotate(45deg)"});
+  }*/
 }

@@ -171,6 +171,7 @@ body{
 
   #header #top_right_menu #search{
     display : none;
+    border : none;
   }
 
   #header #top_right_menu li::before{
