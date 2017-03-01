@@ -47,7 +47,7 @@ body{
   content: none;
 }
 
-#header #top_right_menu li #search{
+#header #top_right_menu #search{
   margin : 0px 40px;
 }
 
@@ -154,7 +154,7 @@ body{
     display : none;
     width : 100%;
     margin-top : 15px;
-
+    height : auto;
   }
 
   #header #top_right_menu li{
