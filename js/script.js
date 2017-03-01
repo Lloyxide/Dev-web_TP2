@@ -39,11 +39,19 @@ function menuMobile(){
   else
   document.getElementById("top_right_menu").style.display = "block";
 }
-
+/*
 window.ondevicemotion = function(event){
   var aY = event.rotationRate.y;
   $("#acceY").html(aY);
   /*$('.dogInc').each(function (){
     $(this).css({"-webkit-transform": "rotate(45deg)", "-moz-transform": "rotate(45deg)", "-o-transform": "rotate(45deg)", "transform": "rotate(45deg)"});
-  }*/
-}
+  }
+}*/
+
+addEventListener("deviceorientation", function(e) {
+    $("#acceY").html(e.alpha);
+    // This function is called when the phone rotates
+    // e.alpha is the angle around the y axis (yaw)
+    // e.beta is the angle around the x axis (pitch)
+    // e.gamma is the angle around the z axis (roll)
+});
