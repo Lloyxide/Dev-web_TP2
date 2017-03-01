@@ -50,10 +50,10 @@ window.ondevicemotion = function(event){
 
 addEventListener("deviceorientation", function(e) {
     $('.dogInc').each(function (){
-      $(this).css({"-webkit-transform": "rotate("+Math.round(e.alpha)+"deg)", "-moz-transform": "rotate("+Math.round(e.alpha)+"deg)", "-o-transform": "rotate("+Math.round(e.alpha)+"deg)", "transform": "rotate("+Math.round(e.alpha)+"deg)"});
+      $(this).css({"-webkit-transform": "rotate("+Math.floor(e.alpha)+"deg)", "-moz-transform": "rotate("+Math.floor(e.alpha)+"deg)", "-o-transform": "rotate("+Math.floor(e.alpha)+"deg)", "transform": "rotate("+Math.floor(e.alpha)+"deg)"});
     });
     // This function is called when the phone rotates
-    // e.alpha is the angle around the y axis (yaw)
-    // e.beta is the angle around the x axis (pitch)
-    // e.gamma is the angle around the z axis (roll)
+    // e.alpha is the angle afloor the y axis (yaw)
+    // e.beta is the angle afloor the x axis (pitch)
+    // e.gamma is the angle afloor the z axis (roll)
 });
