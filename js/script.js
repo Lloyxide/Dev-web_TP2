@@ -35,9 +35,9 @@ function dogDogDog(){
 
 function menuMobile(){
   if(document.getElementById("top_right_menu").style.display == "block")
-  document.getElementById("top_right_menu").style.display = "none";
+    document.getElementById("top_right_menu").style.display = "none";
   else
-  document.getElementById("top_right_menu").style.display = "block";
+    document.getElementById("top_right_menu").style.display = "block";
 }
 /*
 window.ondevicemotion = function(event){
