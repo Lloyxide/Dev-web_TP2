@@ -49,7 +49,10 @@ window.ondevicemotion = function(event){
 }*/
 
 addEventListener("deviceorientation", function(e) {
-    $("#acceY").html(e.beta);
+    $("#acceY").html(e.gamma);
+    $('.dogInc').each(function (){
+      $(this).css({"-webkit-transform": "rotate("+e.gamma+"deg)", "-moz-transform": "rotate("+e.gamma+"deg)", "-o-transform": "rotate("+e.gamma+"deg)", "transform": "rotate("+e.gamma+"deg)"});
+    }
     // This function is called when the phone rotates
     // e.alpha is the angle around the y axis (yaw)
     // e.beta is the angle around the x axis (pitch)
